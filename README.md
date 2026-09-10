@@ -1,6 +1,8 @@
-Kstream Customer Segmentation
+Kafka Streams Customer Segmentation
 
-This project demonstrate how to segment customer based on their order purchases 
+This project demonstrates how to build a real-time customer segmentation pipeline using Apache Kafka Streams, Java, and Avro.
+
+The application consumes customer orders from Kafka, groups them by customerId, maintains running customer statistics in a Kafka Streams state store, and publishes an updated customer segment whenever a new order is processed.
 
 Architecture Diagram
 
