@@ -1,4 +1,4 @@
-Kafka Streams Customer Segmentation
+## Kafka Streams Customer Segmentation
 
 This project demonstrates how to build a real-time customer segmentation pipeline using Apache Kafka Streams, Java, and Avro.
 
