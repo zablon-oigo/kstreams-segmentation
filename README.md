@@ -4,10 +4,10 @@ This project demonstrates how to build a real-time customer segmentation pipelin
 
 The application consumes customer orders from Kafka, groups them by customerId, maintains running customer statistics in a Kafka Streams state store, and publishes an updated customer segment whenever a new order is processed.
 
-Architecture Diagram
+#### Architecture Diagram
 
 
-Running the Project
+#### Running the Project
 
 The project includes Docker Compose for the local Kafka environment.
 ```sh
@@ -17,11 +17,18 @@ Check the running containers:
 ```sh
 docker ps
 ```
-Start the Producer
+#### Start the Producer
 ```sh
 mvn exec:java -Dexec.mainClass=segmentation.Producer
 ```
-Start the Kafka Streams Application
+#### Start the Kafka Streams Application
 ```sh
 mvn exec:java -Dexec.mainClass=segmentation.CustomerSegmentationApp
+```
+
+#### Inspecting the Results
+
+Open your browser:
+```sh
+http://localhost:8087
 ```
